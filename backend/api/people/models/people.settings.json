@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "people",
+  "info": {
+    "name": "People",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "videos": {
+      "collection": "videos",
+      "via": "person"
+    },
+    "audio": {
+      "collection": "audios",
+      "via": "person"
+    }
+  }
+}

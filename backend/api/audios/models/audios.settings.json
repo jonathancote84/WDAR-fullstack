@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "audios",
+  "info": {
+    "name": "Audios",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "clip": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "files",
+        "images",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": true
+    },
+    "geometry": {
+      "type": "json",
+      "required": true
+    },
+    "person": {
+      "via": "audio",
+      "model": "people"
+    }
+  }
+}
