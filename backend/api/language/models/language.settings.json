@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "languages",
+  "info": {
+    "name": "language",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "videos": {
+      "collection": "videos",
+      "via": "languages",
+      "dominant": true
+    },
+    "audios": {
+      "via": "languages",
+      "collection": "audios",
+      "dominant": true
+    },
+    "Type": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

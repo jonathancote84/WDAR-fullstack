@@ -35,8 +35,12 @@
       "required": true
     },
     "person": {
-      "via": "audio",
-      "model": "people"
+      "model": "people",
+      "via": "audio"
+    },
+    "languages": {
+      "collection": "language",
+      "via": "audios"
     }
   }
 }

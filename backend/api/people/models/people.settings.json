@@ -19,8 +19,8 @@
       "via": "person"
     },
     "audio": {
-      "collection": "audios",
-      "via": "person"
+      "via": "person",
+      "collection": "audios"
     }
   }
 }
