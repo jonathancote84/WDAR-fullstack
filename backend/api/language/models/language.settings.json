@@ -24,6 +24,10 @@
     "Type": {
       "type": "string",
       "required": true
+    },
+    "markers": {
+      "via": "language",
+      "collection": "markers"
     }
   }
 }

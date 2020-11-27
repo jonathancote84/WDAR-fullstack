@@ -1,9 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "audios",
+  "collectionName": "markers",
   "info": {
-    "name": "Audios",
-    "description": ""
+    "name": "Markers"
   },
   "options": {
     "increments": true,
@@ -34,15 +33,16 @@
       "type": "json",
       "required": true
     },
+    "language": {
+      "model": "language",
+      "via": "markers"
+    },
     "person": {
       "model": "people",
-      "via": "audio"
-    },
-    "languages": {
-      "collection": "language",
-      "via": "audios"
+      "via": "markers"
     },
     "media_type": {
+      "via": "markers",
       "model": "media-type"
     }
   }

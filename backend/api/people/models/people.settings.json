@@ -21,6 +21,10 @@
     "audio": {
       "via": "person",
       "collection": "audios"
+    },
+    "markers": {
+      "via": "person",
+      "collection": "markers"
     }
   }
 }
